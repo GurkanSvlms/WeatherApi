@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="onItemClickListener"
+            type="com.example.weatherapi.util.extension.OnItemClickListener" />
+
+        <variable
+            name="cityDetail"
+            type="com.example.weatherapi.model.cityResponse.city.NearbyCityItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> onItemClickListener.onClick(cityDetail)}"
+        android:layout_margin="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivMarker"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/marker_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvCityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{cityDetail.title}"
+                android:fontFamily="sans-serif-condensed"
+                app:layout_constraintStart_toEndOf="@id/ivMarker"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="12dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

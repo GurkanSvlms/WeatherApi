@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "931932384425",
+    "project_id": "weatherapidemo-4803d",
+    "storage_bucket": "weatherapidemo-4803d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931932384425:android:48b8a46ba7f5384178cdb8",
+        "android_client_info": {
+          "package_name": "com.example.weatherapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931932384425-k4f1osej5c7c5ojhklqkrf0v3muut66j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.weatherapi",
+            "certificate_hash": "54195bf0d7125ae2109a3e2924942a66bd2db15f"
+          }
+        },
+        {
+          "client_id": "931932384425-3ok2j9btspa6lpnkcq0ido7aq0jc3071.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVQcsKDHjqqHKUx0mtG262No8pTp-VNe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931932384425-3ok2j9btspa6lpnkcq0ido7aq0jc3071.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
